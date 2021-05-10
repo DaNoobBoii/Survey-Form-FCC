@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <!-- Link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="title">
+    <h1 id="title">DrexA Company Survey Form</h1>
+    <p id="description">Thank You For Helping Us Improve Our Company</p>
+  </div>
+  <form action="/form" id="survey-form" autocomplete="off">
+    <h2 style="text-align: center; padding: 20px 0;">SURVEY FORM</h2>
+    <div class="id-form form">
+      <p class="sub-title">Personal Info</p>
+      <div class="name">
+        <label for="name"><i class="fa fa-user" aria-hidden="true"></i>
+          <p>Name</p>
+        </label>
+        <input autocomplete="off" type="text" id="name" placeholder="Please Enter Your Name" required>
+      </div>
+      <div class="email">
+        <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>
+          <p>Email</p>
+        </label>
+        <input autocomplete="off" type="email" id="email" placeholder="Please Enter Your Email" required>
+      </div>
+      <div class="age">
+        <label for="number"><i class="fa fa-user-plus" aria-hidden="true"></i>
+          <p>Age (optional)</p>
+        </label>
+        <input autocomplete="off" type="number" id="number" placeholder="Please Enter Your Age">
+      </div>
+      <div class="dropdown">
+        <label for="role"><i class="fa fa-users" aria-hidden="true"></i>
+          <p>Which option best describes your current role?</p>
+        </label>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="recomend">
+      <p class="sub-title">Recomend</p>
+      <div class="recomend-form form">
+        <p>Would You Recomended DrexA Co. To Your Friends?</p>
+        <div class="recomend-input">
+          <div class="item">
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+            <label>Definitely</label>
+          </div>
+          <div class="item">
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+            <label>Maybe</label>
+          </div>
+          <div class="item">
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio" >
+            <label>Not sure</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="improve form">
+      <p class="sub-title">Please Tell Us What Else Should We Improve?</p>
+      <div class="improve-form form">
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <div class="btn form">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

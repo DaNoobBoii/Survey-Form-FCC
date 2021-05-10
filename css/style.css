@@ -1,0 +1,144 @@
+:root {
+  --robotoSlab: 'Roboto Slab', sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
+  --orangePeel: #FF9F1C;
+  --babyPowder: #FDFFFC;
+  --inperialRed: #F71735;
+  --richBlack: #011627;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+h1 {
+  font-family: var(--robotoSlab);
+}
+
+a {
+  font-family: var(--robotoSlab);
+}
+
+label {
+  font-family: var(--ubuntu);
+}
+
+h2 {
+  font-family: var(--ubuntu);
+}
+
+p {
+  font-family: var(--ubuntu);
+}
+
+.sub-title {
+  font-size: 20pt;
+}
+
+/* Utilities */
+
+/* Body */
+body {
+  position: relative;
+  padding: 0 30%;
+  color: var(--babyPowder);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)),
+    url(../img/company-mini.jpg);
+  background-size: cover;
+}
+
+/* Body */
+
+/* Title */
+.title {
+  text-align: center;
+  padding: 35px 0;
+}
+
+.title h1 {
+  padding: 5px 0;
+}
+
+.title h2 {
+  padding: 5px 0;
+}
+
+.form {
+  padding: 10px;
+}
+
+/* Title */
+
+/* Form */
+#survey-form {
+  width: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0 30px;
+}
+
+.id-form .name,
+.id-form .email,
+.id-form .age {
+  padding: 10px 0;
+}
+
+.id-form label p {
+  padding: 10px 0;
+}
+
+.id-form label {
+  display: flex;
+  align-items: center;
+}
+
+.id-form label p,
+.id-form label i {
+  margin: 0 3px;
+}
+
+.id-form input,
+.id-form select {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 5px solid var(--orangePeel);
+  outline: none;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  border-radius: 2px;
+}
+
+.improve textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.btn button {
+  width: 100%;
+  height: 30px;
+}
+
+/* Form */
